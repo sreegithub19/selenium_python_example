@@ -1,8 +1,9 @@
 name: Daily Selenium UI Tests
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -39,4 +40,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pytest-report
+
           path: results/report.html
