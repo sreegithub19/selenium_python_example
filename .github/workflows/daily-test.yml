@@ -1,5 +1,6 @@
 name: Daily Selenium UI Tests
 
+
 on:
   push:
     branches:
@@ -41,4 +42,5 @@ jobs:
           name: pytest-report
 
           path: results/report.html
+
 
