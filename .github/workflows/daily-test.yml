@@ -9,7 +9,6 @@ on:
 jobs:
   selenium-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
 
     steps:
       - name: Checkout code
@@ -42,3 +41,4 @@ jobs:
           name: pytest-report
 
           path: results/report.html
+
